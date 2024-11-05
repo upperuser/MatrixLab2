@@ -17,6 +17,11 @@
                 <TextBlock Text="x" VerticalAlignment="Center"/>
                 <TextBox x:Name="ColsMatrixBTextBox" Width="40" Margin="5"/>
             </StackPanel>
+            <TextBlock Text="Операция:" Width="96" />
+            <ComboBox x:Name="OperationComboBox" Width="100">
+                <ComboBoxItem Content="Сложение" />
+                <ComboBoxItem Content="Умножение" />
+            </ComboBox>
 
             <Button Content="Создать матрицы" Click="CreateMatrices_Click" Margin="200 10" Height="30" />
             <Button Content="Заполнить случайными числами" Click="GenerateRandomValues_Click" Margin="200 0" Height="30"/>
@@ -26,13 +31,7 @@
                 <ItemsControl x:Name="MatrixBControl" Margin="10" />
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <TextBlock Text="Операция:" />
-                <ComboBox x:Name="OperationComboBox" Width="100" Margin="10 0 0 0">
-                    <ComboBoxItem Content="Сложение" />
-                    <ComboBoxItem Content="Умножение" />
-                </ComboBox>
-            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10"/>
 
             <Button Content="Рассчитать" Click="Calculate_Click" Margin="200 0" Height="30"/>
 
